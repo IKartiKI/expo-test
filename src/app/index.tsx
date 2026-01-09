@@ -13,12 +13,20 @@ export default function IndexScreen() {
       <Link href="/second" push asChild>
         <Button title = "Push to second"/>
       </Link>
-      <Link href="anything/fourth/third" push asChild>
-        <Button title = "Push to third"/>
+      <Link href={{
+         pathname: "/second",
+         params: { name: "Kartik"}
+        }} 
+         push asChild>
+        <Button title = "Greet Kartik on /second" theme="secondary"/>
       </Link>
-      <Link href="anything/fourth/fifth/sixth" push asChild>
-        <Button title = "Push to fifth/sixth"/>
-      </Link>
+        <Button 
+          title="Greet Ansh on /second" 
+          theme="secondary" 
+          onPress={() => {
+              router.push({ pathname: "/second", params: { name: "Ansh"}});
+          }}
+        />
     </View>
   );
 }
