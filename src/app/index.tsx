@@ -37,6 +37,9 @@ export default function IndexScreen() {
          push asChild>
         <Button title = "Greet Kartik on /second" theme="secondary"/>
       </Link>
+      <Link href="/products/shoes/1234" push asChild>
+          <Button title = "Push to /products/shoes/1234" theme="tertiary"/>
+        </Link>
     </View>
   );
 }
