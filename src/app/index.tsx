@@ -10,7 +10,7 @@ export default function IndexScreen() {
       <AppText center size = "heading" bold>
         Index Screen
       </AppText>
-      <Link href="/second" push asChild>
+      {/* <Link href="/second" push asChild>
         <Button title = "Push to second"/>
       </Link>
       <Link href={{
@@ -39,7 +39,7 @@ export default function IndexScreen() {
       </Link>
       <Link href="/products/shoes/1234" push asChild>
           <Button title = "Push to /products/shoes/1234" theme="tertiary"/>
-        </Link>
+        </Link> */}
     </View>
   );
 }
