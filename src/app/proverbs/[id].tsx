@@ -1,6 +1,6 @@
 import { AppText } from "@/components/AppText";
 import { Button, View } from "react-native";
-import { Link } from "expo-router";
+import { Link, Stack } from "expo-router";
 import { useLocalSearchParams } from "expo-router";
 
  const proverbs = [
@@ -32,7 +32,8 @@ export default function ProverbScreen() {
         );
     }
     return (
-    <View className="justify-center flex-1 p-4"> 
+    <View className="justify-center flex-1 p-4">
+      <Stack.Screen options={{ title: proverb.source}} />
       <AppText center size="large" bold>
         "{proverb.proverb}"
       </AppText>

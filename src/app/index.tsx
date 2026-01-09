@@ -35,7 +35,7 @@ export default function IndexScreen() {
          params: { id: "2"}
         }} 
          push asChild>
-        <Button title = "Greet Kartik on /second" theme="secondary"/>
+        <Button title = "Push to /proverbs/2" theme="secondary"/>
       </Link>
       <Link href="/products/shoes/1234" push asChild>
           <Button title = "Push to /products/shoes/1234" theme="tertiary"/>
