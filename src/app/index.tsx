@@ -27,6 +27,16 @@ export default function IndexScreen() {
               router.push({ pathname: "/second", params: { name: "Ansh"}});
           }}
         />
+        <Link href="/proverbs/1" push asChild>
+          <Button title = "Push to /proverbs/1" theme="tertiary"/>
+        </Link>
+        <Link href={{
+         pathname: "/proverbs/[id]",
+         params: { id: "2"}
+        }} 
+         push asChild>
+        <Button title = "Greet Kartik on /second" theme="secondary"/>
+      </Link>
     </View>
   );
 }
