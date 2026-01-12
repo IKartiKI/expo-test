@@ -10,6 +10,9 @@ export default function IndexScreen() {
       <AppText center size = "heading" bold>
         Index Screen
       </AppText>
+      <Link href="/home-nested" push asChild>
+        <Button title="Push to /home-nested" />
+      </Link>
     </View>
   );
 }

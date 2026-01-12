@@ -9,9 +9,11 @@ export default function RootLayout() {
     <React.Fragment>
       <StatusBar style="auto" />
      <Tabs screenOptions={{ tabBarActiveTintColor: "teal"}}>
-        <Tabs.Screen name="index" options={{
+        <Tabs.Screen name="(home)" options={{
            title: "Home",
            //href: null,
+           tabBarLabel: "Home",
+           headerShown: false,
            tabBarIcon: ({ color }) => <MaterialCommunityIcons name="numeric-1-box-outline" size={24} color={color} />
             }} />
         <Tabs.Screen name="second" options={{  
