@@ -13,6 +13,13 @@ export default function IndexScreen() {
       <Link href="/home-nested" push asChild>
         <Button title="Push to /home-nested" />
       </Link>
+      <Button 
+        title="Back"
+        theme= "secondary" 
+        onPress={() => {
+           router.back(); 
+        }}
+      />
     </View>
   );
 }

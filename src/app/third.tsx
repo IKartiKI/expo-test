@@ -1,6 +1,7 @@
 import { AppText } from "@/components/AppText"
-import { Link } from "expo-router"
+import { Link, router } from "expo-router"
 import { View } from "react-native"
+import { Button } from "@/components/Button"
 
 
 export default function ThirdScreen() {
@@ -9,6 +10,13 @@ export default function ThirdScreen() {
       <AppText center size = "heading" bold>
         Index Screen
       </AppText>
+      <Button 
+        title="Back"
+        theme= "secondary" 
+        onPress={() => {
+          router.back(); 
+        }}
+      />
     </View>
   );
 }

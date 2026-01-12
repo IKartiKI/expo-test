@@ -8,7 +8,10 @@ export default function RootLayout() {
   return (
     <React.Fragment>
       <StatusBar style="auto" />
-     <Tabs screenOptions={{ tabBarActiveTintColor: "teal"}}>
+     <Tabs 
+      screenOptions={{ tabBarActiveTintColor: "teal"}}
+      backBehavior="order"
+     >
         <Tabs.Screen name="(home)" options={{
            title: "Home",
            //href: null,
@@ -19,6 +22,7 @@ export default function RootLayout() {
         <Tabs.Screen name="second" options={{  
           title: "Second",
           headerShown: false,
+          popToTopOnBlur: true,
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="numeric-2-box-outline" size={24} color={color} />
         }} />
         <Tabs.Screen name="third" options={{ 
@@ -27,7 +31,7 @@ export default function RootLayout() {
         }} />
         <Tabs.Screen name="fourth" options={{ 
           title: "Fourth",
-          //tabBarBadge: "+1",
+          tabBarBadge: "2",
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="numeric-4-box-outline" size={24} color={color} />
         }} />
       </Tabs>
