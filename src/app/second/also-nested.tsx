@@ -7,7 +7,7 @@ export default function SecondScreen() {
   return (
     <View className="justify-center flex-1 p-4 bg-yellow-200">
       <AppText center size = "heading" bold>
-        Index Screen
+        Also-Nested Screen
       </AppText>
     </View>
   );

@@ -1,4 +1,4 @@
-import { Stack } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 import "../../global.css";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
@@ -8,15 +8,6 @@ export default function RootLayout() {
   return (
     <React.Fragment>
       <StatusBar style="auto" />
-<<<<<<< Updated upstream
-      <Stack>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="second" />
-        <Stack.Screen name="proverbs/[id]" 
-          options={{ title: "Proverb" }} />
-        <Stack.Screen name="products/[category]/[productId]" />
-      </Stack>
-=======
      <Tabs screenOptions={{ tabBarActiveTintColor: "teal"}}>
         <Tabs.Screen name="index" options={{
            title: "Home",
@@ -38,7 +29,6 @@ export default function RootLayout() {
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="numeric-4-box-outline" size={24} color={color} />
         }} />
       </Tabs>
->>>>>>> Stashed changes
     </React.Fragment>
   );
 }
